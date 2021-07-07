@@ -15,6 +15,7 @@ log("Your debug message goes here.")
 boxlog("Your debug message goes here.")
 ```
 ![image](https://user-images.githubusercontent.com/52811202/124785776-24d24780-df15-11eb-9fa5-99536017f3c0.png)
+---
 
 
 ## boxlog() call with no caller attributes
@@ -22,4 +23,4 @@ boxlog("Your debug message goes here.")
 boxlog("Clear date 1 pressed")
 ```
 ![image](https://user-images.githubusercontent.com/52811202/124782327-251d1380-df12-11eb-8454-65b59dc2bb9e.png)
-
+---
