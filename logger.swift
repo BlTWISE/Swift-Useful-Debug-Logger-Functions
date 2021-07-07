@@ -11,9 +11,20 @@ import SwiftUI
 func log(_ message: String = "Default", _ fileName: String = #file, _ functionName: String = #function, _ lineNumber: Int = #line) {
     
     let file = fileName.components(separatedBy: "/").last ?? "ERROR"
+    
+    let stringSuffix = "    |"
+    let string = "[\(file)][\(functionName)()][L::\(lineNumber)]: \(message)" + stringSuffix
+    
+    var dashes = ""
+    
+    for _ in 0...string.count-1 {
+        dashes += "-"
+    }
         
-    print("-----------------------------------------------------------------------------------")
-    print("[\(file)][\(functionName)()][LINE \(lineNumber)]:", message)
+    print("")
+    print(dashes)
+    print(string)
+    print(dashes)
     print("")
         
 }
@@ -31,7 +42,7 @@ func log(_ message: String = "Default", _ fileName: String = #file, _ functionNa
 func boxlog(_ message: String = "Default", _ fileName: String = #file, _ functionName: String = #function, _ lineNumber: Int = #line) {
     
     let file = fileName.components(separatedBy: "/").last ?? "ERROR"
-    let string = "[\(file)][\(functionName)()][LINE \(lineNumber)]: \(message)"
+    let string = "[\(file)][\(functionName)()][L::\(lineNumber)]: \(message)"
     let spaces = "       "
     var finalString = spaces + string + spaces
     var dashes = ""
