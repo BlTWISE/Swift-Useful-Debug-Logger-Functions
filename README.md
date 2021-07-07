@@ -8,6 +8,7 @@ In `logger.swift`, there are a list of log functions that are neatly organized i
 log("Your debug message goes here.")
 ```
 ![image](https://user-images.githubusercontent.com/52811202/124785543-f2284f00-df14-11eb-9b7f-5ebfe87a7bf5.png)
+---
 
 ## boxlog() call with caller attributes
 ```swift
