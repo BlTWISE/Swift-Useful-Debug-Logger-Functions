@@ -3,7 +3,20 @@ In `logger.swift`, there are a list of log functions that are neatly organized i
 
 # Usage Examples
 
-## boxlog call with no caller attributes
+## log() call
+```swift
+log("Your debug message goes here.")
+```
+![image](https://user-images.githubusercontent.com/52811202/124785543-f2284f00-df14-11eb-9b7f-5ebfe87a7bf5.png)
+
+## boxlog() call with caller attributes
+```swift
+boxlog("Your debug message goes here.")
+```
+![image](https://user-images.githubusercontent.com/52811202/124785776-24d24780-df15-11eb-9fa5-99536017f3c0.png)
+
+
+## boxlog() call with no caller attributes
 ```swift
 boxlog("Clear date 1 pressed")
 ```
